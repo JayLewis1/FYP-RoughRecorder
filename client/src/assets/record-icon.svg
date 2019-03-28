@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="115.25" height="115.25" viewBox="0 0 115.25 115.25">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d81e5b;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Group_183" data-name="Group 183" transform="translate(-314 -249)">
+    <circle id="Ellipse_58" data-name="Ellipse 58" class="cls-1" cx="57.625" cy="57.625" r="57.625" transform="translate(314 249)"/>
+    <rect id="Rectangle_111" data-name="Rectangle 111" class="cls-2" width="46.444" height="86.007" rx="23" transform="translate(348.403 266.202)"/>
+    <rect id="Rectangle_112" data-name="Rectangle 112" class="cls-1" width="17.201" height="6.881" transform="translate(382.806 286.843)"/>
+    <rect id="Rectangle_117" data-name="Rectangle 117" class="cls-1" width="17.201" height="6.881" transform="translate(343.243 286.843)"/>
+    <rect id="Rectangle_113" data-name="Rectangle 113" class="cls-1" width="17.201" height="6.881" transform="translate(382.806 298.884)"/>
+    <rect id="Rectangle_116" data-name="Rectangle 116" class="cls-1" width="17.201" height="6.881" transform="translate(343.243 298.884)"/>
+    <rect id="Rectangle_114" data-name="Rectangle 114" class="cls-1" width="17.201" height="6.881" transform="translate(382.806 309.205)"/>
+    <rect id="Rectangle_118" data-name="Rectangle 118" class="cls-1" width="17.201" height="6.881" transform="translate(343.243 309.205)"/>
+    <rect id="Rectangle_115" data-name="Rectangle 115" class="cls-1" width="17.201" height="6.881" transform="translate(382.806 319.526)"/>
+    <rect id="Rectangle_119" data-name="Rectangle 119" class="cls-1" width="17.201" height="6.881" transform="translate(343.243 319.526)"/>
+    <rect id="Rectangle_120" data-name="Rectangle 120" class="cls-1" width="10.321" height="6.881" transform="translate(370.765 345.328) rotate(90)"/>
+    <rect id="Rectangle_121" data-name="Rectangle 121" class="cls-1" width="10.321" height="6.881" transform="translate(379.366 345.328) rotate(90)"/>
+  </g>
+</svg>
