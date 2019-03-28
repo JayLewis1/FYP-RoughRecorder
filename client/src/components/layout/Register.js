@@ -1,14 +1,16 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-// import { Helmet } from "react-helmet";c
+// import { Helmet } from "react-helmet";
 import logo from "../../assets/home-logo.png";
 
-class Landing extends Component {
+class Register extends Component {
   constructor() {
     super();
     this.state = {
+      name: "",
       email: "",
       password: "",
+      password2: "",
       errors: {}
     };
 
@@ -23,12 +25,14 @@ class Landing extends Component {
   onSubmit(e) {
     e.preventDefault();
 
-    const user = {
+    const newUser = {
+      name: this.state.name,
       email: this.state.email,
-      password: this.state.password
+      password: this.state.password,
+      password2: this.state.password2
     };
 
-    console.log(user);
+    console.log(newUser);
   }
 
   render() {
@@ -44,7 +48,7 @@ class Landing extends Component {
                 <Link to="/about">about</Link>
               </li>
               <li>
-                <Link to="/register">sign up</Link>
+                <Link to="/">sign in</Link>
               </li>
             </ul>
           </nav>
@@ -54,24 +58,38 @@ class Landing extends Component {
         </div>
         <div className="form-wrapper">
           <ul className="form-title">
-            <li id="landing-signin">
-              <Link className="white-on-red" to="/">
+            <li id="register-signin">
+              <Link className="red-on-white" to="/">
                 Sign In
               </Link>
             </li>
-            <li id="landing-register">
-              <Link className="red-on-white" to="/register">
+            <li id="register-register">
+              <Link className="white-on-red" to="/register">
                 Register
               </Link>
             </li>
           </ul>
-          <div id="signin-box">
-            <form id="sigin-form" onSubmit={this.onSubmit}>
-              <label htmlFor="email">Email</label>
+          <div id="reg-box">
+            <form id="register-form" onSubmit={this.onSubmit}>
+              <label htmlFor="name">Full Name</label>
               <br />
               <input
                 type="text"
+                name="name"
+                className="reg"
+                value={this.state.name}
+                onChange={this.onChange}
+              />
+
+              <label htmlFor="email" id="reg-email">
+                Email
+              </label>
+
+              <input
+                type="text"
                 name="email"
+                className="reg"
+                id="email-input"
                 value={this.state.email}
                 onChange={this.onChange}
               />
@@ -81,10 +99,22 @@ class Landing extends Component {
               <input
                 type="password"
                 name="password"
+                className="reg"
                 value={this.state.password}
                 onChange={this.onChange}
               />
-              <input type="submit" value="Submit" id="sign-submit" />
+              <br />
+              <label htmlFor="password2" id="reg-conPas">
+                Confirm Password
+              </label>
+              <input
+                type="password"
+                name="password2"
+                className="reg secondPassword"
+                value={this.state.password2}
+                onChange={this.onChange}
+              />
+              <input type="submit" value="Submit" id="reg-submit" />
             </form>
           </div>
         </div>
@@ -93,4 +123,4 @@ class Landing extends Component {
   }
 }
 
-export default Landing;
+export default Register;

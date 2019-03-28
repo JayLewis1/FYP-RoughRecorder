@@ -67,10 +67,10 @@ li a {
 }
 
 #register-form {
-  display: none;
+  display: block;
 }
 
-#sign-in {
+#landing-signin {
   background-image: url("assets/red-shape.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -92,7 +92,7 @@ li a {
   z-index: 1;
 }
 
-#register {
+#landing-register {
   background-image: url("assets/white-shape.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -112,6 +112,61 @@ li a {
   position: relative;
   z-index: 0;
 }
+
+#register-signin {
+  background-image: url("assets/white-shape.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30px;
+  width: 150px;
+
+  padding: 2px;
+  padding-top: 5px;
+
+  text-align: center;
+
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+
+  margin-top: -37px;
+
+  position: relative;
+  z-index: 0;
+}
+
+#register-register {
+  background-image: url("assets/red-shape.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30px;
+  width: 160px;
+
+  padding: 2px;
+  padding-top: 5px;
+
+  text-align: center;
+
+  font-weight: 400;
+  font-size: 20px;
+
+  margin-left: 130px;
+  margin-top: -37px;
+  position: relative;
+  z-index: 1;
+}
+
+.white-on-red {
+  color: white;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+.red-on-white {
+  color: #d81e5b;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+/*
 #sign-btn {
   background: none;
   border: none;
@@ -130,6 +185,7 @@ li a {
   font-size: 20px;
 }
 
+
 #reg-btn {
   background: none;
   border: none;
@@ -146,6 +202,17 @@ li a {
   color: #d81e5b;
   font-weight: 400;
   font-size: 20px;
+} */
+
+#reg-box {
+  border: 10px solid #d81e5b;
+  background: #fff7dd;
+  width: 500px;
+  height: 320px;
+
+  /* margin: 0 auto; */
+  margin-top: 20%;
+  margin-left: -50px;
 }
 
 #signin-box {
@@ -206,7 +273,7 @@ input[type="submit"] {
 #reg-email {
   position: absolute;
   margin-top: -25px;
-  margin-left: 4px;
+  margin-left: 10px;
 }
 
 #reg-conPas {
@@ -225,6 +292,10 @@ input[type="submit"] {
   font-size: 18px;
   padding: 5px;
   /* margin-left: -10px; */
+}
+
+#email-input {
+  margin-left: 10px;
 }
 
 #reg-submit {
