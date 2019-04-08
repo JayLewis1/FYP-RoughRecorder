@@ -270,6 +270,22 @@ input[type="submit"] {
   margin-left: 210px;
 }
 
+.invalid {
+  border-bottom: 2px solid red;
+}
+
+.invalid-msg {
+  color: red;
+  font-size: 12px;
+  position: absolute;
+  margin-top: -25px;
+  width: 150px;
+}
+
+.right {
+  margin-left: 200px;
+}
+
 #reg-email {
   position: absolute;
   margin-top: -25px;

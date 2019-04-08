@@ -16,11 +16,30 @@ app.use(bodyParser.json());
 // DB config
 const db = require("./config/keys").mongoURI;
 
+// Mongo API setup
+// var MongoClient = require("mongodb").MongoClient;
+// var url = "mongodb://jay:jaylewis1@ds147225.mlab.com:47225/roughrecorder";
+// var mLab = require("mongolab-data-api")("veRBjMo5NbM5--yKMr1RIslAzJvgS5th");
+
+// const assert = require("assert");
+// const dbName = "roughrecorder";
+
 // Connect to MongoDB
 mongoose
   .connect(db)
   .then(() => console.log("MongoDB Connected"))
   .catch(err => console.log(err));
+
+// Connect to MongoDB
+// MongoClient.connect(url, function(err, client) {
+//   useNewUrlParser: true;
+//   assert.equal(null, err);
+//   console.log("MongoDB connected");
+
+//   const db = client.db(dbName);
+
+//   client.close();
+// });
 
 // Passport Middleware
 app.use(passport.initialize());
